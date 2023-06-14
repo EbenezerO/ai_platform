@@ -2,10 +2,9 @@
 # @Author  : ouyang
 # @Time    : 2023/6/6 8:53
 import argparse
-import os
-import os.path as osp
 
-from config.config import Config
+from engine.config.config import Config
+# from engine.runner.runner import Runner
 
 
 def parse_args():
@@ -21,6 +20,9 @@ def main():
     args = parse_args()
 
     cfg = Config.file2dict(args.config)
+
+    # build the runner from config
+    # runner = Runner.from_cfg(cfg)
     print(cfg)
 
 

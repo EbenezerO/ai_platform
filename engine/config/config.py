@@ -1,22 +1,11 @@
 # -*- coding: utf-8 -*-
 # @Author  : ouyang
 # @Time    : 2023/6/6 9:18
-import ast
-import copy
-import os
 import os.path as osp
-import platform
-import shutil
-import tempfile
-import types
-import uuid
-import warnings
-from argparse import Action, ArgumentParser, Namespace
-from collections import abc
 from pathlib import Path
-from typing import Any, Optional, Sequence, Tuple, Union
+from typing import Optional, Union
 
-from utils.path import check_file_exist
+from engine.utils.path import check_file_exist
 
 
 class Config(dict):
